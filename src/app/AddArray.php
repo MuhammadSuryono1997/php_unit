@@ -12,7 +12,8 @@ class AddArray
         $this->data = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
         if(is_array($new))
         {
-            $this->data = array_splice($this->data, 0,0, $new);
+            array_splice($this->data, 0,0, $new[0]);
+            array_splice($this->data, count($this->data)+1,0, $new[1]);
             return $this->data;
         }
         else

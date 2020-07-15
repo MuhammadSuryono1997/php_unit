@@ -24,7 +24,7 @@ class MembalikkanKata
         }
         else
         {
-            $reverse = expload(' ',$string);
+            $reverse = explode(' ',$string);
             $reverse = array_reverse($reverse);
             return implode(' ',$reverse);
         }
