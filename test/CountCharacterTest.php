@@ -18,7 +18,7 @@ class CountCharacterTest extends TestCase
         $this->assertEquals("Jumlah karakter pada '".$string."' adalah ".count(str_split($string)), $character->countCharacter($string));
     }
 
-    public function testIsString()
+    public function testInputByString()
     {
         $string = "OKE saya";
         $character = new JumlahKaratkter();
@@ -29,14 +29,14 @@ class CountCharacterTest extends TestCase
     {
         $string = 10;
         $character = new JumlahKaratkter();
-        $this->assertIsInt($character->countCharacter($string));
+        $this->assertIsString($character->countCharacter($string));
     }
 
     public function testInputByArray()
     {
         $string = array("saya","ini","coba");
         $character = new JumlahKaratkter();
-        $this->assertIsArray($character->countCharacter($string));
+        $this->assertIsString($character->countCharacter($string));
     }
 }
 

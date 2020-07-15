@@ -1,6 +1,7 @@
 <?php
 namespace App\Test;
 
+use Exception;
 class TahunKabisat
 {
     protected $tahun;
@@ -26,7 +27,7 @@ class TahunKabisat
 
     public function checkKabisat($tahun)
     {
-        if ($i % 400 == 0 or $i % 100 == 0 or $i % 4 == 0) 
+        if ($tahun % 400 == 0 or $tahun % 100 == 0 or $tahun % 4 == 0) 
         {
             return $tahun." Kabisat";
         }
