@@ -11,7 +11,7 @@ class FilmRating
     {
         if(is_int($usia))
         {
-            return $usia."Kategori rating".$this->checkRating($usia);
+            return $usia." Kategori rating ".$this->checkRating($usia);
         }
         else 
         {
