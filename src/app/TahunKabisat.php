@@ -11,11 +11,11 @@ class TahunKabisat
         {
             if(is_array($tahun))
             {
-                throw new Exception("your data is ".gettype($tahun)." value must be string", 1);
+                throw new Exception("your data is ".gettype($tahun)." value must be integer", 1);
             }
             else
             {
-                throw new Exception($tahun." is ".gettype($tahun)." value must be string", 1);
+                throw new Exception($tahun." is ".gettype($tahun)." value must be integer", 1);
             }
             
         }
